@@ -2403,22 +2403,6 @@ html.presenter-mode #presenterView:not([hidden]){display:flex;}
 
 
 
-<section class="slide v3" data-glean-id="s-tmrw-open" data-section="Beyond today" data-title="This is tomorrow">
-  <div class="fr">
-    <div class="top"><span class="chip-sec"><i></i>Beyond today</span></div>
-    <div class="tm-hero">
-      <h2 class="ttl rv" style="--d:0;">Maya’s week was today.<br><em>This is tomorrow.</em></h2>
-      <p class="nx-lead rv" style="--d:1;">Maya’s week used what you can use today. Here is where it is going.</p>
-    </div>
-    <div class="tm-path rv" style="--d:2;">
-      <div class="tm-node now"><span class="tm-k">Today</span><b>Maya’s week</b><span>Find, verify, act, automate.</span></div>
-      <div class="tm-arrow" aria-hidden="true"></div>
-      <div class="tm-node nxt"><span class="tm-k">Next</span><b>Four things on the way</b><span>One short video, then a recap.</span></div>
-    </div>
-  </div>
-  <div class="pn script"><ul class="sc"><li>That was Maya&#x27;s week, and it used what you can use today.</li><li>Now a quick look at what is coming.</li><li>Four features, in one short video. <span class="do">[press → to go to the video]</span></li></ul></div>
-</section>
-
 <section class="slide v3" data-glean-id="s-customers" data-section="Beyond today" data-title="What other sectors report" data-steps="4">
   <div class="fr">
     <div class="top"><span class="chip-sec"><i></i>Beyond today · Public customer stories</span></div>
@@ -3026,7 +3010,7 @@ html.presenter-mode #presenterView:not([hidden]){display:flex;}
     var hidden = Array.isArray(state && state.hidden) ? state.hidden.map(Number) : [];
     return {cur:cur,step:step,hidden:hidden};
   }
-  var PV_TARGETS = [90, 165, 225, 255, 300, 330, 360, 375, 420, 765, 1020, 1080, 1485, 1545, 1665, 2040, 2085, 2160, 2190, 2370, 2700, 2760, 3015, 3135, 3225, 3525, 3555, 3600, 3600, 3600, 3600, 3645, 3705, 3795, 4155, 4230, 4350, 4395, 4455, 4500, 4515, 4635, 4650, 4650, 4650, 4650, 4650]; /* target end time (seconds) per slide: your plan, 130 wpm, 10 min Q&A held back */
+  var PV_TARGETS = [90, 165, 225, 255, 300, 330, 360, 375, 420, 765, 1020, 1080, 1485, 1545, 1665, 2040, 2085, 2160, 2190, 2370, 2700, 2760, 3015, 3135, 3225, 3525, 3555, 3600, 3600, 3600, 3600, 3645, 3705, 3795, 4155, 4230, 4350, 4395, 4455, 4500, 4620, 4635, 4635, 4635, 4635, 4635]; /* target end time (seconds) per slide: your plan, 130 wpm, 10 min Q&A held back */
   function renderPresenter(state){
     if(!presenterMode || !state) return;
     state = normalizeState(state);
